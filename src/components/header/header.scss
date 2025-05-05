@@ -1,0 +1,38 @@
+.header {
+    font-family: "Merienda", cursive;
+}
+
+.container {
+    padding: 50px 120px 84px 120px;
+}
+
+.title {
+    margin-top: 60px;
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.menu {
+    &_list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        &_link {
+            position: relative;
+            list-style: none;
+        }
+        &_link > img {
+            position: absolute;
+            left: -35px;
+            top: -15px;
+        }
+        &_link > a {
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+}
