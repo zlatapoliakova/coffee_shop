@@ -1,5 +1,5 @@
 .container {
-    padding: 70px 120px 60px 120px;
+    padding: 50px 120px 84px 120px;
     font-family: Merienda;
 }
 
@@ -17,6 +17,7 @@
 .about {
     display: flex;
     justify-content: center;
+    padding: 20px 0 60px 0;
     gap: 80px;
     &_image {
         object-fit: cover;
