@@ -1,0 +1,24 @@
+@mixin style-txt($weight, $text-align) {
+    color: #000;
+    font-family: Merienda;
+    font-size: 14px;
+    text-align: $text-align;
+    font-weight: $weight;
+    margin-top: 14px;
+}
+
+.coffee-item {
+    padding: 37px 27px 22px 27px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    &_title {
+        @include style-txt(400, center);
+    }
+    &_country {
+        @include style-txt(400, right);
+    }
+    &_price {
+        @include style-txt(700, right);
+    }
+}
