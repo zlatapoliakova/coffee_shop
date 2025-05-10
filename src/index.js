@@ -9,6 +9,6 @@ import ForYourPleasure from './pages/for_your_pleasure/ForYourPleasure';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <OurCoffee/>
+    <ForYourPleasure/>
   </React.StrictMode>
 );

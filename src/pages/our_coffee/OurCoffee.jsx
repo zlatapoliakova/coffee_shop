@@ -8,6 +8,7 @@ import Filter from "../../components/filter/Filter";
 
 import './ourCoffee.scss';
 import CoffeeItem from "../../components/coffee_item/CoffeeItem";
+import Footer from "../../components/footer/Footer";
 
 const OurCoffee = () => {
     const dataCoffeeItems = [
@@ -36,6 +37,7 @@ const OurCoffee = () => {
                     })
                 }
             </div>
+            <Footer/>
         </>
     );
 }
