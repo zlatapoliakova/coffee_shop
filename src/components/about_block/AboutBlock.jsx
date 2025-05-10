@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 import coffeeBeans from './coffee-beans.svg';
 
 import './aboutBlock.scss';

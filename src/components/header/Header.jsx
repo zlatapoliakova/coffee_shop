@@ -12,10 +12,10 @@ const Header = ({urlBg, titleName}) => {
                     <ul className="menu_list">
                         <li className="menu_list_link">
                             <img src={coffeeBeans} alt="Coffee beans" />
-                            <a href="#">Coffee house</a>
+                            <a href="/">Coffee house</a>
                         </li>
-                        <li className="menu_list_link"><a href="#">Our coffee</a></li>
-                        <li className="menu_list_link"><a href="#">For your pleasure</a></li>
+                        <li className="menu_list_link"><a href="/">Our coffee</a></li>
+                        <li className="menu_list_link"><a href="/">For your pleasure</a></li>
                     </ul>
                 </nav>
                 <h1 className="title">{titleName}</h1>

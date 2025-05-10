@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 52px 542px 30px 543px;
+    gap: 30px;
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        &_link {
+            position: relative;
+            list-style: none;
+        }
+        &_link > img {
+            position: absolute;
+            left: -35px;
+            top: -15px;
+        }
+        &_link > a {
+            color: #000;
+            font-family: Merienda;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+    &_divider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 25px;
+
+        &_line {
+            width: 60px;
+            height: 1px;
+            background-color: #000;
+        }
+    }
+}
