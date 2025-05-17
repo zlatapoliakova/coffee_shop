@@ -2,11 +2,11 @@ import coffeeBeans from './coffee-beans.svg';
 
 import './header.scss';
 
-const Header = ({urlBg, titleName}) => {
+const Header = (props) => {
     return (
         <header 
             className='header'
-            style={{background: `url('${urlBg}') lightgray 50% / cover no-repeat`}} >
+            style={{background: `url('${props.urlBg}') lightgray 50% / cover no-repeat`}} >
             <div className="container">
                 <nav className="nav">
                     <ul className="menu_list">
@@ -18,7 +18,8 @@ const Header = ({urlBg, titleName}) => {
                         <li className="menu_list_link"><a href="/">For your pleasure</a></li>
                     </ul>
                 </nav>
-                <h1 className="title">{titleName}</h1>
+                <h1 className="title">{props.titleName}</h1>
+                {props.children}
             </div>
         </header>
     );
