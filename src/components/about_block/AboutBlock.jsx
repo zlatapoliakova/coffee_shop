@@ -1,16 +1,23 @@
 import coffeeBeans from './coffee-beans.svg';
 
 import './aboutBlock.scss';
+import '../../css/general-style.css';
 
-const AboutBlock = ({image, title, descr}) => {
+const AboutBlock = ({image, title, descr, lowLine=true}) => {
     const parts = descr.split('[[br]]');
     
     return(
-        <div className="container">
-            <div className="about">
-                <img src={image} alt="Girl drink coffee" className="about_img" />
-                <div className="about_text">
-                    <h2 className="about_titel">{title}</h2>
+        <>
+            <div className="about" >
+                <img 
+                    src={image} 
+                    alt="Girl drink coffee" 
+                    className="about_img" 
+                    style={{'display': image ? 'block' : 'none'}}/>
+                <div 
+                    className="about_text" 
+                    style={{'maxWidth': image ? '346px' : '590px'}}>
+                    <h2 className="title">{title}</h2>
                     <div className="about_text_divider">
                         <div className='about_text_divider_line'></div>
                         <img src={coffeeBeans} alt="Coffee beans" />
@@ -27,8 +34,10 @@ const AboutBlock = ({image, title, descr}) => {
                     </div>
                 </div>
             </div>
-            <div className="low-line"></div>
-        </div>
+            {
+                lowLine ? <div className="low-line"></div> : null
+            }
+        </>
     );
 }
 

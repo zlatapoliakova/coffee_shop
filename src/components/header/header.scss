@@ -1,17 +1,16 @@
 .header {
     font-family: "Merienda", cursive;
+    &_title {
+        margin-top: 60px;
+        color: #FFF;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+    }
 }
 
 .container {
     padding: 50px 120px 84px 120px;
-}
-
-.title {
-    margin-top: 60px;
-    color: #FFF;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
 }
 
 .menu {

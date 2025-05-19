@@ -1,14 +1,16 @@
+import {goods} from '../../bd/data';
+
 import Header from "../../components/header/Header";
 import AboutBlock from "../../components/about_block/AboutBlock";
-
-import bg from '../../resources/img/coffee-shop-bg.jpg';
-import aboutImage from './about-our-coffee.jpg';
+import CoffeeItemList from "../../components/coffee_item_list/CoffeeItemList";
+import Footer from "../../components/footer/Footer";
 import SearchPanel from "../../components/searchPanel/SearchPanel";
 import Filter from "../../components/filter/Filter";
 
+import bg from '../../resources/img/coffee-shop-bg.jpg';
+import aboutImage from './about-our-coffee.jpg';
+
 import './ourCoffee.scss';
-import CoffeeItemList from "../../components/coffee_item_list/CoffeeItemList";
-import Footer from "../../components/footer/Footer";
 
 const OurCoffee = () => {
 
@@ -22,7 +24,7 @@ const OurCoffee = () => {
                 <SearchPanel text="Lookiing for" placeholder="start typing here..." />
                 <Filter text="Or filter" /> 
             </div>
-            <CoffeeItemList/>
+            <CoffeeItemList data={goods}/>
             <Footer/>
         </>
     );

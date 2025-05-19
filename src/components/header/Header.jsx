@@ -18,7 +18,7 @@ const Header = (props) => {
                         <li className="menu_list_link"><a href="/">For your pleasure</a></li>
                     </ul>
                 </nav>
-                <h1 className="title">{props.titleName}</h1>
+                <h1 className="header_title">{props.titleName}</h1>
                 {props.children}
             </div>
         </header>

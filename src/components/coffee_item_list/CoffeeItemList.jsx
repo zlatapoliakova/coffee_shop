@@ -1,11 +1,10 @@
 import CoffeeItem from "../coffee_item/CoffeeItem";
-import {goods} from '../../bd/data';
 
-const CoffeeItemList = () => {
+const CoffeeItemList = ({data}) => {
     return (
         <div className="coffee-items">
             {
-                goods.map((item, i) => {
+                data.map((item, i) => {
                     return <CoffeeItem key={i} title={item.title} country={item.country} price={item.price} />
                 })
             }
